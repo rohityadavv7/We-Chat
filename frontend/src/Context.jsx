@@ -4,7 +4,8 @@ import Peer from "simple-peer"
 
 const SocketContext = createContext();
 
-const Socket = io("http://localhost:5000");
+// const Socket = io("http://localhost:5000");
+const Socket = io("https://we-chat-rieu.onrender.com");
 
 const ContextProvider = ({children}) => {
     const[stream, setStream] = useState({});
